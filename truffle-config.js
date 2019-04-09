@@ -19,11 +19,24 @@ module.exports = {
       output: 'src/index.js',
       target: 'build/contracts',
       includeOnly: [
-        'SampleContract'
+        'GitKarmaToken',
+        'PlasmaContract'
       ], // if you don\'t configure includeOnly property, it will save all contracts
       networks: [
         1,
         2
       ] // if you don\'t configure networks property, it will save all networks
+    },
+  compilers: {
+    solc: {
+      version: '^0.5.2', // A version or constraint - Ex. "^0.5.0"
+      docker: false, // Use a version obtained through docker
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 500 // Optimize for how many times you intend to run the code
+        }
+      }
     }
+  }
 }

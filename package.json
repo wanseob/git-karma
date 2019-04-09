@@ -1,5 +1,6 @@
 {
-  "version": "1.0.0",
+  "name": "git-karma",
+  "version": "0.0.0",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -29,7 +30,11 @@
     "typedarray-to-buffer": "^3.1.5"
   },
   "dependencies": {
+    "casper-pepow-token": "github:wanseob/casper-pepow-token",
     "javascript-stringify": "^1.6.0",
+    "openzeppelin-solidity": "^2.2.0",
+    "solidity-bloom-filter": "^1.0.0",
+    "solidity-patricia-tree": "^2.0.2",
     "truffle-contract": "^4.0.4"
   },
   "standard": {
